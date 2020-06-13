@@ -8,9 +8,9 @@ Check the weather in a specific city and get a gif depending on the weather cond
 
 ## Features
 
-- Get the city's weather in either celsius or fahrenheit.
+- Get the city's weather in either Celsius or Fahrenheit.
 - A gif is loaded depending on the weather conditions.
-- Additional details like country, temperature and estimate of how the temperature feels, are presented.
+- Additional details like country, temperature, and estimate of how the temperature feels, are presented.
 
 ## Potential Features
 
