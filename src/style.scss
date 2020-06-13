@@ -28,6 +28,7 @@ body {
 
   #result {
     @include box();
+
     img {
       margin-top: 10px;
       max-height: 250px;
@@ -45,7 +46,6 @@ body {
   #alert {
     margin-top: 1em;
   }
-
 
   .hidden {
     display: none;
