@@ -1,25 +1,31 @@
-# Restaurant Page
+# Weather Check
 
-This is a single page restaurant website that was built to practice the use of Webpack together with loaders. The website elements are loaded dynamically by each of the created JS modules.
+Check the weather in a specific city and get a gif depending on the weather conditions. This app is built to practice the use of promises and async functions.
 
 ## Screenshot
 
 ![screenshot](./screenshot.png)
 
+## Features
+
+- Get the city's weather in either celsius or fahrenheit.
+- A gif is loaded depending on the weather conditions.
+- Additional details like country, temperature and estimate of how the temperature feels, are presented.
+
 ## Potential Features
 
-- Add form to submit reservation orders to an email/DB.
-- View details for each menu item.
+- Change background depending on the temperature.
+- See forecast for a specific time.
 
 ## Built With
 
 - HTML & CSS
-- JavaScript/ES6
+- JavaScript/ES6 + Async/await
 - NPM + Webpack
 
 ## Live Demo
 
-[Visit Live Demo](http://sebgil.me/restaurant_home/)
+[Visit Live Demo](https://raw.githack.com/sebGilR/WeatherApp/feature/app/dist/index.html)
 
 ## Author
 
@@ -33,7 +39,7 @@ This is a single page restaurant website that was built to practice the use of W
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/sebGilR/restaurant_home/issues).
+Feel free to check the [issues page](issues/).
 
 ## Show your support
 
