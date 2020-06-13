@@ -14,14 +14,16 @@ body {
   justify-content: center;
   background-color: rgb(255, 252, 235);
 
-  h1, input {
+  h1,
+  input {
     margin-bottom: 1em;
   }
 
-  #result, #alert {
+  #result,
+  #alert {
     margin-top: 2em;
   }
-  
+
   .hidden {
     display: none;
   }
