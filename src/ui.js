@@ -26,14 +26,14 @@ const showData = () => {
     alertP.classList.add('hidden');
     const data = JSON.parse(localStorage.weather);
     getGif(data.weather);
-    locationP.innerText = `Location: ${data.country}, ${data.name}`;
-    weatherP.innerText = `Condition: ${data.description}`;
-    tempP.innerText = `Temperature: ${data.temp}°`;
-    flikeP.innerText = `Feeling like: ${data.flike}°`;
+    locationP.innerHTML = `<strong>Location:</strong> ${data.country}, ${data.name}`;
+    weatherP.innerHTML = `<strong>Condition:</strong> ${data.description}`;
+    tempP.innerHTML = `<strong>Temperature:</strong> ${data.temp}°`;
+    flikeP.innerHTML = `<strong>Feeling like:</strong> ${data.flike}°`;
     flikeP.parentNode.classList.remove('hidden');
   } else {
     flikeP.parentNode.classList.add('hidden');
-    alertP.innerText = 'Invalid City provided';
+    alertP.innerHTML = '<strong>Please provide a valid city.</strong>';
     alertP.classList.remove('hidden');
   }
 };

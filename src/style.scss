@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@mixin box {
+  background-color: white;
+  padding: 1em;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+  border-radius: 8px;
+}
+
 body {
   position: relative;
   width: 100vw;
@@ -14,6 +22,19 @@ body {
   justify-content: center;
   background-color: rgb(255, 252, 235);
 
+  header {
+    @include box();
+  }
+
+  #result {
+    @include box();
+    img {
+      margin-top: 10px;
+      max-height: 250px;
+      border-radius: 5px;
+    }
+  }
+
   h1,
   input {
     margin-bottom: 1em;
@@ -21,8 +42,9 @@ body {
 
   #result,
   #alert {
-    margin-top: 2em;
+    margin-top: 1em;
   }
+
 
   .hidden {
     display: none;
