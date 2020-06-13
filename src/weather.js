@@ -22,7 +22,7 @@ const saveData = (data) => {
 };
 
 const getWeather = async (city, units, action) => {
-  const base = 'http://api.openweathermap.org/data/2.5/weather';
+  const base = 'https://api.openweathermap.org/data/2.5/weather';
   const key = '17bfcd723e4a10d65e366ef5bc79951f';
   const response = await fetch(`${base}?q=${city()}&APPID=${key}&units=${units()}`, { mode: 'cors' });
   saveData(await response.json());

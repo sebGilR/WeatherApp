@@ -14,7 +14,7 @@ const displayGif = (url) => {
 };
 
 const getGif = async (weather) => {
-  const response = await fetch(`http://api.giphy.com/v1/gifs/search?q=${weather}&limit=1&api_key=hZA0UJe9PBW5av8TZ6DSWJPnGAQ5XIdO`, { mode: 'cors' });
+  const response = await fetch(`https://api.giphy.com/v1/gifs/search?q=${weather}&limit=1&api_key=hZA0UJe9PBW5av8TZ6DSWJPnGAQ5XIdO`, { mode: 'cors' });
   const result = await response.json();
   if (result.cod !== '400' || result.cod !== '404') {
     displayGif(result.data[0].images.original.url);
