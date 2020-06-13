@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Check</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <h1>Weather Check</h1>
+    <form>
+      <input type="search" name="search" id="search" required="true" placeholder="City"><br>
+      <label for="c">
+        <input type="radio" name="units" id="c" value="metric" checked> Celsius
+      </label><br>
+      <label for="f">
+        <input type="radio" name="units" id="f" value="imperial"> Fahrenheit
+      </label>
+    </form>
+    <button type="submit" id="submit">Get weather</button>
+  </header>
+  <main>
+    <div id="result" class="hidden">
+      <p id="location"></p>
+      <p id="temp"></p>
+      <p id="flike"></p>
+      <p id="weather"></p>
+      <img class="hidden" id="gif" src="" alt="Feeling">
+    </div>
+    <p id="alert" class="hidden"></p>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
