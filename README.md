@@ -25,7 +25,7 @@ Check the weather in a specific city and get a gif depending on the weather cond
 
 ## Live Demo
 
-[Visit Live Demo](https://raw.githack.com/sebGilR/WeatherApp/feature/app/dist/index.html)
+[Visit Live Demo](http://sebgil.me/WeatherApp/)
 
 ## Author
 
